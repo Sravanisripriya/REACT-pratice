@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <h1>India score:<span id="ab1"></span> <span id="ab3"></span> </h1>
+        <button onclick="ainc()">score1</button>
+
+        <h1>Pakistan score: <span id="ab2"> </span> <span id="ab4"></span></h1>
+        <button onclick="binc()">score2</button>
+    </body>
+    <script>
+        var a=0
+        var b=0
+        document.getElementById("ab1").innerHTML=a
+        document.getElementById("ab2").innerHTML=b
+        
+
+        function ainc(){
+        a++
+        document.getElementById("ab1").innerHTML=a
+        document.getElementById("ab3").innerHTML="*"
+        document.getElementById("ab4").innerHTML=""
+        }
+        function binc(){
+        b++
+        document.getElementById("ab2").innerHTML=b
+        document.getElementById("ab4").innerHTML="*"
+        document.getElementById("ab3").innerHTML=""
+        }
+    </script>
+</html>

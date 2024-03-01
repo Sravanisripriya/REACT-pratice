@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <h3> Apply green color if variable value is even red for odd</h3>
+        <div id="d1"></div> 
+
+
+ 
+        <script type="text/babel">
+            var num1= +prompt()
+            var jsx1=<h1 style={ num1%2===0?{color:"green"}:{color:"red"}} >{num1}</h1>
+            ReactDOM.render(jsx1,document.getElementById("d1")) 
+        </script>
+    </body>
+</html>

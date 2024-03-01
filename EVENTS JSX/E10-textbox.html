@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="e5"></div>
+
+        <script type="text/babel">
+            
+//  10// Console text box value on button click
+//       function abc(){
+//         console.log(document.getElementById("a1").value)
+        
+//  11// Display text box value in h1 on button click
+//         document.getElementById("a2").innerHTML=document.getElementById("a1").value
+
+//  12// Display text box value in uppercase h1 on button click
+//         document.getElementById("a2").innerHTML=document.getElementById("a1").value.toUpperCase();
+//       }
+//     var jsx=<div>
+//            <input type="text" id="a1"/> 
+//            <button onClick={abc}>click here to see in console</button>
+//            <h1 id="a2"></h1>
+//          </div>
+//     ReactDOM.render(jsx,document.getElementById("e5"))
+
+ 13 // Display text box value in uppercase h1 on textbox keyup
+
+   function abc(){
+          //document.getElementById("a3").innerHTML=document.getElementById("a2").value.toUpperCase();
+              
+ 14 //Display text box value in uppercase h1 on textbox blur 
+          // input lo onkey place lo onBlur use cheyyali 
+
+ 15 //Display text box value in h1 on textbox keyup event
+          //document.getElementById("a3").innerHTML=document.getElementById("a2").value   
+   }
+   var jsx= <div>
+               <input type="text" id="a2" onKeyUp={abc}/>
+               <h1 id="a3"></h1>
+               
+            </div>
+   ReactDOM.render(jsx,document.getElementById("e5"))
+
+
+
+
+        </script>
+    </body>
+</html>

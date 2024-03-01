@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+
+    <body>
+        <div id="e1"></div>
+        <script type="text/babel">
+
+        // 1 Bind event handler to alert something on button click in JSX</h3>
+        //    function abc(){
+        //     alert("oyy")
+        //    }
+        //  var jh1=<button onClick={abc}> Hiiii</button>
+        //  ReactDOM.render(jh1,document.getElementById("e1"))
+              
+
+        //2 Console something on button click
+        // function abc(){
+        //     console.log("hiii")
+        // }
+        // var jsx=<button onClick={abc}>Edupoly</button>
+        // ReactDOM.render(jsx,document.getElementById("e1"))
+
+
+        //3 Console event object on button click
+         function abc(e){
+            console.log(e)
+         }
+         var jsx=<button onClick={abc}>Edupoly</button>
+         ReactDOM.render(jsx,document.getElementById("e1"))
+
+                
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <h3>Display different images conditionally JSX</h3>
+        <div id="b9"></div>
+
+        <script type="text/babel">
+
+            var x=+prompt()
+        var y= <div>{x%2===0?(<img src="https://www.lifewithcats.tv/wp-content/uploads/2011/04/Jumping-Cat.jpg"/>):(<img src="https://a-z-animals.com/media/2021/07/Fluffiest-Animals_-Bichon-Frise-1024x535.jpg"/>)}</div>
+     ReactDOM.render(y,document.getElementById("b9"))
+
+        </script>
+    </body>
+</html>

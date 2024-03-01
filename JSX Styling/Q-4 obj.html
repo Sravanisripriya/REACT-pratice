@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <h3>Display each object properties</h3>
+        <div id="c4"></div>
+
+        <script  type="text/babel">
+              var person = {
+                                "firstName" : "Harry",
+                                "lastName" : "Potter",
+                                "age": 30,
+                                "gender": "male",
+                                "skill" : "ReactJS",                                
+                                "expertise": "Beginner"
+                            }
+                         
+        var jsx= <diV>
+                <h5> firstName:{person.firstName}</h5>
+                <h5>lastName:{person.lastName} </h5>    
+                <i>{person.age} </i>
+                </diV>
+            
+             
+            ReactDOM.render(jsx,document.getElementById("c4"))
+        
+// (person.firstName)-value print avvudhi
+//  Object.keys(person[])
+
+
+        </script>
+    </body>
+</html>

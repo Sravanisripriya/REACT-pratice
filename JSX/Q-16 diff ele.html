@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <h3>Display different elements conditionally JSX</h3>
+        <div id="b8"></div>
+
+        <script type="text/babel">
+         var x=+prompt()
+         var y=<i>{x%2===0?(<h1>even</h1>):(<i>odd</i>)}</i>
+         ReactDOM.render(y,document.getElementById("b8"))
+         </script>
+         
+    </body>
+</html>

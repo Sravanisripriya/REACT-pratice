@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+    <h3> Display each array object in table </h3>
+    <div id="c6"></div>
+
+        <script type="text/babel">
+var people = [
+                            {
+                            "firstname": "karthik",
+                            "lastname": "ayan",
+                            "age": 36,
+                            "gender": "male"
+                            },
+                            {
+                            "firstname": "prakash",
+                            "lastname": "varma",
+                            "age": 32,
+                            "gender": "male"
+                            },
+                            {
+                            "firstname": "sri",
+                            "lastname": "priya",
+                            "age": 21,
+                            "gender": "female"
+                            },
+                            {
+                            "firstname": "mounika",
+                            "lastname": "sree",
+                            "age": 20,
+                            "gender": "female"
+                            } 
+                        ]
+                         
+                    var tjsx=<table border="1px">
+                        {
+                        people.map (function(a){
+                            return(
+                                
+                                <tr style={a.gender==="female"?{ backgroundColor:"pink"}:{ backgroundColor:"skyblue"}}>
+                                    <td>{a.firstname}</td>
+                                    <td>{a.lastname}</td>
+                                    <td>{a.age}</td>
+                                    <td>{a.gender}</td>
+                                    </tr>
+                                
+                            )
+                        })
+                    }   
+                        </table>
+                        ReactDOM.render(tjsx,document.getElementById("c6"))
+
+        
+        </script>
+    </body>
+</html>

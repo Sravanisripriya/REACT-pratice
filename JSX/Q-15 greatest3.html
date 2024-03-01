@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <h3>Display greatest variable value of three in JSX</h3>
+        <div id="b7"></div>
+        <script type="text/babel">
+            var num1=+prompt()
+            var num2=+prompt()
+            var num3=+prompt()
+            var x=<i>{
+                (num1>num2)?[(num1>num3)?num1:num3]:[(num2>num3)?num2:num3]
+            }</i>
+            ReactDOM.render(x,document.getElementById("b7"))
+            
+
+        </script>
+    </body>
+</html>

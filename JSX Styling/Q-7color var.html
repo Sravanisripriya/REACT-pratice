@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="c7"></div>
+        <div id="c8"></div>
+        <h3>  Apply the color names stored in two variable to JSX different h1</h3>
+        
+        <script type="text/babel">
+       var x="purple"
+       var y="green"
+
+       var jsx=<h1 style={{color:x,backgroundColor:y}}>peace</h1>
+       var jnx=<h1 style={{color:y}}>i'm Happy</h1>
+
+       ReactDOM.render(jsx,document.getElementById("c7"))
+       ReactDOM.render(jnx,document.getElementById("c8"))
+        </script>
+    </body>
+</html>

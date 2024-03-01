@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+         <h3>Print array of strings in JSX element in HTML</h3>
+        <div id="a6"></div>
+        <div id="a7"></div>
+
+        <script type="text/babel">
+       var str=<h3>{["jaipur","goa","wayand","ooty"]}</h3>
+       ReactDOM.render(str,document.getElementById("a6"))
+
+
+    ///////////////////////////////////////////////////
+    var str=["Aa","Bb","Cc","Dd"]
+     str.map(function(a){
+     return a
+     })
+     ReactDOM.render(str,document.getElementById("a7"))
+
+        </script>
+    </body>
+</html>

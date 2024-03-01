@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+
+        <div id="e2"></div>
+        
+        <script  type="text/babel">
+//4 Display the event object for a click on div with 300px width and 200px height with 2px border
+    //         function abc(e){
+    //             console.log(e)
+    //         }
+            
+    //   var jsx=<div style={{width:"300px",height:"200px",border:"2px solid"}} onClick={abc}>to see click here</div>
+        
+    //     ReactDOM.render(jsx,document.getElementById("e2"))
+        
+
+ //5 Display the clientX clientY position for a click on div with 300px width and 200px height with 2px border copy
+            function abc(e){
+                console.log(e.clientX)
+                console.log(e.clientY)
+
+//6 Display the text of div on click in console
+                console.log(e.target.innerHTML)
+                
+// Console the id of div onclick
+            console.log(e.target.id)
+            }
+
+   var jh1=<div id= "e3" style={{width:"300px",height:"200px",border:"2px solid"}} onClick={abc}>
+            to see click here
+        </div>
+        ReactDOM.render(jh1,document.getElementById("e2"))
+
+
+
+ 
+
+        </script>
+    </body>
+</html>

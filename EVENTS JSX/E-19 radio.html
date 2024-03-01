@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        <div id="e8"></div>
+        <script type="text/babel">
+ 19//Display radio button value on check     
+        //     function ab(e){
+        //        document.getElementById("a1").innerHTML=e.target.value
+        //     }
+
+        //   var jnx=<div>
+        //        <input name="text" type="radio" value="india" onChange={ab}/>INDIA
+        //          <input name="text" type="radio" value="united state of america" onChange={ab}/>USA
+        //          <div id="a1"></div>   
+        //   </div>
+
+        //   ReactDOM.render(jnx,document.getElementById("e8"))
+
+  20// Display respective image on radio button value
+              function ab(e){
+                if(e.target.value==="male"){
+                    document.getElementById("a1").src="https://cdn-icons-png.freepik.com/512/18/18148.png"
+                }
+                else{
+                    document.getElementById("a1").src="https://www.freeiconspng.com/thumbs/female-icon/female-icon-27.png"
+                }
+              }
+
+          var jsx=<div>
+                    <input name="gen" type="radio" value="male" onChange={ab}/>:MALE
+                    <input name="gen" type="radio" value="female" onChange={ab}/>:FEMALE  
+                    <img  style={{width:"200px"}}src="" id="a1"/>
+                
+                 </div>
+             ReactDOM.render(jsx,document.getElementById("e8"))
+
+        </script>
+    </body>
+</html>

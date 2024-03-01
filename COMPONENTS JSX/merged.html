@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+
+    <body  
+        <div id="a2"></div>
+        <script type="text/babel">
+ 25 //Print merged array values in sorted order of given two arrays in React component
+        //  function Merged(){
+        //    var[x,setX]=React.useState([10,20,80,90,60,])
+        //    var[y,setY]=React.useState([1,50,70,90,5])
+        //    return(
+        //     <h1>
+        //         {
+        //       x.concat(y).sort((a,b)=>{return a>b? 1:-1}).map((a)=>{return <li>{a}</li>})
+        //         }     
+        // </h1> 
+        // )}
+        
+        //    ReactDOM.render(<Merged />,document.getElementById("a2"))
+
+27//  Print only the even numbers of array of numbers in list items in React component
+    //        function Even(){
+    //         var [c,setC]=React.useState([10,52,80,45,11,70,60])
+    //           return(
+    //                 c.map((a)=>{ return (a%2===0? <li>{a}</li>:null)})    
+    //                   }    
+    //             </div>
+    //           )}    
+    // ReactDOM.render(<Even />, document.getElementById("a2"))
+
+    
+// 31// Print the sum of all numbers of array in React component
+//     function Sum(){
+//         var [a,setA]=React.useState([10,52,80,45,11,70,60])
+//              return(
+//                 <div>{
+//                       a.reduce((a,b)=>{return a+b},0)
+//                      }
+//                  </div>
+//              )}
+//         ReactDOM.render(<Sum/>, document.getElementById("a2"))
+
+// 32//Print array strings sorted order in list items in React component
+//      function Arr(){
+//         var [a,setA]=React.useState(["cat","dog","fox","cow"])
+//         return(
+//              a.sort.map((a)=>{return<li>{a.split('').reverse().join('')}</li>})
+//      )}
+
+//      ReactDOM.render(<Arr/>,document.getElementById("a2")) 
+//     //             <div>{           
+             
+
+33// Print a table for the given array of students in React component    
+34// Print student details along with gender image in React component
+//     function Abc (){
+//            var[kids,setKids]=React.useState([
+//                   {
+//                     firstname: "Bindu",
+//                     lastname: "priya",
+//                     age: 12,
+//                     gender:'female'
+//                 },
+//                 {
+//                     firstname: "maha",
+//                     lastname: "lakshmi",
+//                     age: 13,
+//                     gender:'female'
+//                 },
+//                 {
+//                     firstname: "Tanu",
+//                     lastname: "ramya",
+//                     age: 15,
+//                     gender:'female'
+//                 },
+//                 {
+//                     firstname: "shannu",
+//                     lastname: "muukh",
+//                     age: 17,
+//                     gender:'male'
+//                 },
+//                 {
+//                 firstname: "karim",
+//                     lastname: "mulla",
+//                     age: 20,
+//                     gender:'male'}
+//                 ])
+//                 return(
+//                     <table border="1px" width="300px">
+//                       {
+//                        kids.map((a)=>{
+//                         return(
+//                           <tr>
+//                             <td>{a.firstname}</td>
+//                             <td>{a.lastname}</td>
+//                             <td>{a.age}</td>
+//                             <td>
+// <img src={(a.gender==="female")?("https://img.freepik.com/premium-vector/cute-girl-cartoon-character_1639-49641.jpg"):("https://img.freepik.com/free-vector/young-man-character_1308-27408.jpg")} width="60"px/>
+//                              </td>
+//                           </tr>
+//                        )})
+//                       }
+//                         </table>
+//                 )}
+//  ReactDOM.render(<Abc/>,document.getElementById("a2"))       
+
+// // Print the images from array of image urls in React component
+//   function Image(){
+//     var[img ,setImg]=React.useState([
+//                 "https://cdn.mos.cms.futurecdn.net/8Zw7hWD5ZaquyftsRbEmof-1200-80.jpg",
+//                  "https://www.lifewire.com/thmb/unRdFjROthGxGQXL9SZIbc5BzeA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/summerbeach-5b4650c946e0fb005bfb3207.jpg",
+//                  "https://img.freepik.com/free-photo/weather-effects-composition_23-2149853295.jpg"
+//     ])
+//     return(
+//         img.map((a)=>{
+//             return <li><img src={a} width="100px"/></li>
+//         })
+//     )}
+//   ReactDOM.render(<Image/>,document.getElementById("a2"))
+
+ 
+// Print the given array of students in cards in React component
+function Cards(){
+    var[a,setA]=React.useState([
+                {
+                    firstname: "Praveen",
+                    lastname: "Gubbala",
+                    age: 40
+                },
+                {
+                    firstname: "Rohit",
+                    lastname: "Sharma",
+                    age: 35
+                },
+                {
+                    firstname: "Sachin",
+                    lastname: "Tendulkar",
+                    age: 50
+                },
+            ]);
+                   <div style={{width:"20px", height:"30px",padding:"10px", border:"1px solid", margin:"10px"}}></div>
+            return(
+            a.map((b)=>{
+                return(<div>{b.firstname} 
+                            {b.lastname}
+                            {b.age}
+                    </div>)
+                  
+            })
+
+
+)}
+ReactDOM.render(<Cards/>,document.getElementById("a2"))
+
+
+        </script>
+    </body>
+</html>

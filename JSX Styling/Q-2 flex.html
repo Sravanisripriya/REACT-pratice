@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <h3>Display each array element in flex boxes</h3>
+        <div id="c2"></div>
+
+        <script type="text/babel">
+
+            var arr=[322,500,100,999,600]
+            var jsx=<i style={{display:"flex"}}>
+                {
+                  arr.map (function(a){
+                    return <div style={{border:'1px solid',padding:'10px', margin:"10px"}}>{a}</div>
+                  })
+            }
+        </i>
+            ReactDOM.render(jsx,document.getElementById("c2"))
+
+        </script>
+    </body>
+
+
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="e7"></div>
+        <script type="text/babel">
+19//Display result of two text box values in h1 on textbox on multiplication and division buttons 
+      function mul() {
+        var num1= +document.getElementById("a1").value
+        var num2= +document.getElementById("a2").value
+           document.getElementById("a3").innerHTML=num1*num2
+
+              }
+     function div(){
+        var num1= +document.getElementById("a1").value
+        var num2= +document.getElementById("a2").value
+       document.getElementById("a3").innerHTML=num1/num2
+                  }
+
+            var jsx=<div>
+                <input type="number" id="a1"/> <br></br>
+                <input type="number" id="a2"/> <br></br><br></br>
+
+                <button onClick={mul}>mul</button>
+                <button onClick={div}>div</button>
+                <h1 id="a3"></h1>
+                </div>
+            ReactDOM.render(jsx,document.getElementById("e7"))
+        </script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <h3> Display each array object in flex boxes</h3>
+        <div id="c5"></div>
+
+        <script type="text/babel">
+           
+           var people = [
+                            {
+                            "firstname": "karthik",
+                            "lastname": "ayan",
+                            "age": 36,
+                            "gender": "male"
+                            },
+                            {
+                            "firstname": "prakash",
+                            "lastname": "varma",
+                            "age": 32,
+                            "gender": "male"
+                            },
+                            {
+                            "firstname": "sri",
+                            "lastname": "priya",
+                            "age": 21,
+                            "gender": "female"
+                            },
+                            {
+                            "firstname": "mounika",
+                            "lastname": "sree",
+                            "age": 20,
+                            "gender": "female"
+                            } 
+                        ]
+
+                        var jsx=<div style={{display:"flex"}}>
+                            {
+                            people.map(function(a){
+                                return (
+                                    <div style={{border:"1px solid", margin:"8px",padding:"8px",width:"200px"}}>
+                                        <div style={a.gender==="male"?{backgroundColor:"skyblue"}:{backgroundColor:"pink"}}>
+                                            {a.gender==="male"&& <img src="https://banner2.cleanpng.com/20180511/gow/kisspng-computer-icons-user-icon-design-male-5af5f3ddb49f30.5266313915260681897398.jpg" style={{width:"80px"}}/>}
+                                            {a.gender==="female"&& <img src="https://www.freeiconspng.com/thumbs/female-icon/female-icon-27.png" style={{width:"80px"}}/>}
+                               <h2>fname:{a.firstname}</h2>
+                               <h2>lname:{a.lastname}</h2>
+                               <h2>age:{a.age}</h2>
+                               <h2>gender:{a.gender}</h2>
+                                           </div>
+                                      </div>
+
+                                )
+
+                            })
+
+                        }
+                            </div>
+                            ReactDOM.render(jsx,document.getElementById("c5"))
+                    
+                    
+                    
+
+                       
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

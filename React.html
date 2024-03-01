@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        
+
+    </head>
+    <body>
+        <div id="a1"></div>
+        <div id="a2"></div>
+        <div id="a3"></div>
+        <div id="a4"></div>
+        <script type="text/babel">
+
+// create element using dom  
+        var nh1=document.createElement("h1") 
+        nh1.innerHTML="my first code DOM"
+        nh1.style.color="purple"
+        document.getElementById("a1").appendChild(nh1)
+
+//  create element using react
+       var rh1=React.createElement("h1",{style:{color:"pink"}},"my first code react")
+       ReactDOM.render(rh1,document.getElementById("a2"))
+
+// create element using jsx
+   var jh1=<h1 style={{color:"green"}}>my first code jsx</h1>
+   ReactDOM.render(jh1,document.getElementById("a3"))
+
+
+//    create list using jsx
+ var array=["Html","Css","JS","bootstrap"]
+ var listjsx=<ul>
+    {
+    array.map(function(b){
+        return<li>{b}</li>
+    })
+    }
+    </ul>
+    ReactDOM.render(listjsx,document.getElementById("a4"))
+
+        </script>
+    </body>
+</html>

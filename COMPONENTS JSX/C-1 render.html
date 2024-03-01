@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="a1"></div>
+
+        <script type="text/babel">
+ 1// Rendering React component 
+
+        //     function Sravani(){
+        //     return( 
+        //            <h1>welcome</h1>
+        //   )}
+        //  ReactDOM.render(<Sravani></Sravani>,document.getElementById("a1"))    
+ 
+ 2// Evaluate expression in React component
+//             function Add(){
+//                 var [x,setX]=React.useState(20);
+//                 var [y,setY]=React.useState(20);
+//     return(
+//         <h1>{x+y}</h1>  
+//     )
+//    }
+//    ReactDOM.render(<Add></Add>,document.getElementById("a1"))
+
+//  3//Evaluate string concatenation in React component
+//      function Concat(){
+//         var [x,setX]=React.useState("prabhas")
+//         var [y,setY]=React.useState("anushka")
+//         return(
+//             <h1>{x+y}</h1>
+//         )
+//      }
+//      ReactDOM.render(<Concat></Concat>,document.getElementById("a1"))
+
+//  4 //Evaluate logical expression in React component
+//        function Log(){
+//         var [x,setX]=React.useState("LOVE")
+//         var [y,setY]=React.useState("HATE")
+//         return(
+//             <h1>{(false)?x:y}</h1>
+//         )
+//        }
+//        ReactDOM.render(<Log/>,document.getElementById("a1")) 
+
+ 5//Print array of numbers in React component
+    //    function Arr(){
+    //     var [x, setX]=React.useState([10,80,90,4,7,0,11])
+    
+    //           return(
+    //                   <h3>{x.map (function(k){
+    //                     return <h2>{k}</h2>
+    //                   })}</h3>
+    //           )
+    //    }
+    //    ReactDOM.render(<Arr/>,document.getElementById("a1")) 
+
+ 6 //Print first two character of array values in React component
+//        function Arr(){
+//              var[str,setStr]=React.useState(["sun","moon","stars","galaxy"])
+//        return(
+//         <div>
+//              {str.map ((k)=>{
+//                 return <h1>{k.slice(0,2)}</h1>})}
+//         </div>
+//     )
+//  }
+//       ReactDOM.render(<Arr />,document.getElementById("a1"))
+
+ 7//Print square root of 14 in React component
+//            function Square(){
+//             var [x,setX]=React.useState()
+//             var c="swathi"
+//             return(
+//                 <div>
+//                 <h1>{Math.sqrt(14)}</h1>
+// 8 // Print integer part of the number 134.42 in React component
+//                 <h1> {parseInt(134.42)}</h1>
+                
+// 9// Print string swathi in uppercase in React component 
+//              <h1> {c.toUpperCase()}</h1>
+// 10 //  length
+//            <h1>{c.length}</h1>
+//                 </div>
+//             )}
+//            ReactDOM.render(<Square />,document.getElementById("a1"))
+
+
+// 11// Print reverse of string praveen in React component 
+//     function Reverse(){
+//         var[x,setX]=React.useState('praveen')
+//         return(
+//             <h1>{x.split('').reverse('').join('')}</h1>
+//         )
+//     }
+//     ReactDOM.render(<Reverse />,document.getElementById("a1")) 
+
+// 12 // Evaluate addition of two variable values in React component
+
+// function Add(){
+//     var[x,setX]=React.useState(10)
+//     var[y,setY]=React.useState(50)
+//     return(
+//         <div>
+//         <h1>{x+y}</h1>
+// 13 // Display greatest of two variable values in React component
+//         <h1>{x>y? x:y}</h1>
+//         </div>
+//     )}
+// ReactDOM.render(<Add />,document.getElementById("a1"))
+
+// 14// Display variable value is even or odd in React component
+//          function Num(){
+//             var x=+prompt()
+//             var [a,setA]=React.useState(x)
+//             return(
+//                 <div>
+//                 <h1>{a%2===0?"even":"odd"}</h1>
+// 15 // Display variable value is positive or negative in React component 
+//             <h1> {a>0?"+ve":"-ve"}</h1>           
+//                 </div>
+//             )}
+//             ReactDOM.render(<Num />,document.getElementById("a1"))
+
+// 16// Display greatest variable value of three in React component
+//     function Greatest(){
+//         var x=+prompt()
+//         var y=+prompt()
+//         var z=+prompt()
+//         var [a,seta]=React.useState(x)
+//         var [b,setb]=React.useState(y)    
+//         var [c,setc]=React.useState(z)
+//         return(
+//             <div>
+//                 <h1>{a>b?(a>c?a:c):(b>c?b:c)}</h1>
+//                 </div>
+//         )}
+//       ReactDOM.render(<Greatest />,document.getElementById("a1"))  
+        
+  17//Display different elements conditionally React component
+//   function Num(){
+//             var x=+prompt()
+//             var [a,setA]=React.useState(x)
+//             return(
+//                 <div>
+//                 <h1>{a%2===0?(<h1>even</h1>):(<h1>odd</h1>)}</h1>
+//                 </div>
+//             )}
+// ReactDOM.render(<Num />,document.getElementById("a1"))
+       
+18//Display different images conditionally React component
+        //   function Image(){
+        //     var x=+prompt()
+        //     var[a,setA]=React.useState(x)
+        //     var y=<img src="https://t3.ftcdn.net/jpg/05/52/90/20/360_F_552902050_jDIxghthSDTwmKzs7PNc1DPK6c5QYuIJ.jpg"/>
+        //     var z=<img src="https://raiyanfoundation.com/wp-content/uploads/2021/04/the-hell.jpg"/>
+        //     return(
+        //         <h1>{a%2===0?y:z}</h1>
+        //     )}
+        // ReactDOM.render(<Image />,document.getElementById("a1"))
+
+19//Conditionally apply url to image in React component
+        //  function Image(){
+        //     var x=+prompt()
+        //     var [a,setA]=React.useState(x)
+
+        //     return( 
+        //         <div>
+        //         <img width="200px"src={a%2===0?"https://raiyanfoundation.com/wp-content/uploads/2021/04/the-hell.jpg":"https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/activities-fun/10-great-small-dog-breeds/maltese-portrait.jpg"}/>
+        //         </div>
+        //     )}
+        //     ReactDOM.render(<Image />,document.getElementById("a1"))
+
+20// Print array strings ol and ul in React component
+    function Order(){
+       var[arr,setArr]=React.useState(["dog","cat","pig","fox"])
+       return ( 
+        <div>
+               <ol>{
+                    arr.map ((k)=>{return <li>{k.toLowerCase()}</li>})
+                   }
+               </ol>
+               <ul>{
+                   arr.map ((k)=>{return <li>{k.toUpperCase()}</li>})
+                   }
+               </ul>
+            </div>
+     )}
+     ReactDOM.render(<Order />,document.getElementById("a1"))
+
+
+        </script>
+    </body>
+</html>
